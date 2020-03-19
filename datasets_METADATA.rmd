@@ -1,0 +1,117 @@
+# Marmot_SEM_Innovation
+Code repository for Williams et al. () testing indirect social influence on innovation success mediated by behavioral strategy in yellow-bellied marmots
+Contact: dmwilliams@g.ucla.edu
+
+social_observations.csv
+All social observations in 2018
+col = colony at which interaction occurred
+uid_ini = unique identification number of interaction initiator
+uid_rec = unique identification number of interaction recipient
+uid_win = unique indentification number of interaction winner
+interac_type = interaction type from ethogram in Blumstein 2009?
+sexi = sex of interaction initiator
+sexr = sex of interaction recipient
+
+innovation_2018.csv
+All individuals who interacted with the puzzle box in 2018
+uid = unique identification number of individual
+col = colony at which individual resides
+age = age category of individual (A adult, Y yearling)
+sex = sex of individual 
+
+yearly_innovation.csv
+All individuals who interacted with the puzzle box in 2018 with whether they succeeded at least once during the year
+uid = unique identification number of marmot
+sex = sex of individual
+agecat = age category of individual (A adult, Y yearling)
+col = colony at which individual resides
+success = yearly overall success in opening the box; did they open the puzzle box at least once in 2018 (1 success, 0 no success)
+
+behavioral_neophobia.csv
+All measures of neophobia
+uid = unique identification number of marmot
+days = sequential order of days at which marmot was at the puzzle box 
+date = calendar date of interaction with the puzzle box
+time.first.trial = start time of first interaction by an individual with the puzzle box on each day (24 hrs)
+lat.totouch.s.day = latency to touch the puzzle box from first step onto the plywood of the first interaction per day (s)
+success= success in opening the puzzle box during that particular interaction (1 success, 0 no success) 
+
+behaviors_2018.csv
+All extracted behaviors from 2018 puzzle box videos
+uid = unique identification number of marmot
+col = colony at which interaction with puzzle box occurred
+location = burrow location within colony at which interaction with puzzle box occurred
+trial = sequential trial over the year of marmot interacting with the puzzle box
+success = success in opening the puzzle box during that particular interaction (1 success, 0 no success)
+date = calendar date of interaction with the puzzle box
+time = start time of interaction with puzzle box (24 hr)
+second = indicates difference between rows with the same time and date values; if an individual had multiple trials within one 2-minute video
+all_time = start time of subsequent videos used for analysis if a trial ran across multiple videos (over 2 mins, 24 hrs)
+camera = identification number of the camera that filmed the video used to score behaviors in jwatcher
+obs = observer who scored jwatcher for that interaction
+-The following columns are all output values from Jwatcher. Behaviors referred to here are defined in the ethogram in Supplemental Table S1-
+N_On.plywood = number of instances during a trial that an individual stepped on to the plywood
+N_Lid.Other = number of instances during a trial that an individual interacted with the lid in a way that was not a nose, bite, or paw
+N_Door.Nose = number of instances during a trial that an individual interacted with the door with their nose
+N_Door.Bite = number of instances during a trial that an individual bit the door
+N_Door.Paw = number of instances during a trial that an individual pawed at the door
+N_Lid.Paw = number of instances during a trial that an individual pawed at the lid
+N_Offside.Other = number of instances during a trial that an individual interacted with the a part of the box that was not the door or lid in a way that was not a nose, bite, or paw
+N_Offside.Bite = number of instances during a trial that an individual bit a part of the box that was not the door or lid 
+N_Offside.Paw = number of instances during a trial that an individual pawed at a part of the box that was not the door or lid
+N_Lid.Bite = number of instances during a trial that an individual bit the lid
+N_Lid.Nose = number of instances during a trial that an individual interacted with the lid with their nose
+N_Other = number of instances during a trial that an individual exhibited a behavior not defined by the ethogram
+N_Rear.look = number of instances during a trial that an individual bipedally stood and looked around
+N_Stand.look = number of instances during a trial that an indivdiual quadrapedally stood and looks around
+N_Off.plywood = number of instances during a trial that an individual stepped off the plywood
+N_Offside.Nose = number of instances during a trial that an individual interacted with a part of the box that was not the door or lid with their nose
+N_Door.Other = number of instances during a trial that an individual interacted with the door in a way that was not a nose, bite, or paw
+N_Walk = number of instances during a trial that an individual walked around on the plywood
+N_Stand.forage.near = number of instances during a trial that an individual stood around the box and ate food from the it
+N_Chew.plywood = number of instances during a trial that an individual chewed on the plywood
+N_Stand.forage.at = number of instances during a trial that an individual stood in the box and ate food from it
+TT_On.plywood = total time during a trial that an individual stepped on to the plywood (s)
+TT_Lid.Other = total time during a trial that an individual interacted with the lid in a way that was not a nose, bite, or paw (s)
+TT_Door.Nose = total time during a trial that an individual interacted with the door with their nose (s)
+TT_Door.Bite = total time during a trial that an individual bit the door (s)
+TT_Door.Paw = total time during a trial that an individual pawed at the door (s)
+TT_Lid.Paw = total time during a trial that an individual pawed at the lid (s)
+TT_Offside.Other = total time during a trial that an individual interacted with the a part of the box that was not the door or lid in a way that was not a nose, bite, or paw (s)
+TT_Offside.Bite = total time during a trial that an individual bit a part of the box that was not the door or lid (s)
+TT_Offside.Paw = total time during a trial that an individual pawed at a part of the box that was not the door or lid (s)
+TT_Lid.Bite = total time during a trial that an individual bit the lid (s)
+TT_Lid.Nose = total time during a trial that an individual interacted with the lid with their nose (s)
+TT_Other = total time during a trial that an individual exhibited a behavior not defined by the ethogram (s)
+TT_Rear.look = total time during a trial that an individual bipedally stood and looked around (s)
+TT_Stand.look = total time during a trial that an indivdiual quadrapedally stood and looks around (s)
+TT_Off.plywood = total time during a trial that an individual stepped off the plywood (s)
+TT_Offside.Nose = total time during a trial that an individual interacted with a part of the box that was not the door or lid with their nose (s)
+TT_Door.Other = total time during a trial that an individual interacted with the door in a way that was not a nose, bite, or paw (s)
+TT_Walk = total time during a trial that an individual walked around on the plywood (s)
+TT_Stand.forage.near = total time during a trial that an individual stood around the box and ate food from the it (s)
+TT_Chew.plywood = total time during a trial that an individual chewed on the plywood (s)
+TT_Stand.forage.at = total time during a trial that an individual stood in the box and ate food from it (s)
+PropIS_On.plywood = proportion of time in sight during a trial that an individual stepped on to the plywood (s)
+PropIS_Lid.Other = proportion of time in sight during a trial that an individual interacted with the lid in a way that was not a nose, bite, or paw (s)
+PropIS_Door.Nose = proportion of time in sight during a trial that an individual interacted with the door with their nose (s)
+PropIS_Door.Bite = proportion of time in sight during a trial that an individual bit the door (s)
+PropIS_Door.Paw = proportion of time in sight during a trial that an individual pawed at the door (s)
+PropIS_Lid.Paw = proportion of time in sight during a trial that an individual pawed at the lid (s)
+PropIS_Offside.Other = proportion of time in sight during a trial that an individual interacted with the a part of the box that was not the door or lid in a way that was not a nose, bite, or paw (s)
+PropIS_Offside.Bite = proportion of time in sight during a trial that an individual bit a part of the box that was not the door or lid (s)
+PropIS_Offside.Paw = proportion of time in sight during a trial that an individual pawed at a part of the box that was not the door or lid (s)
+PropIS_Lid.Bite = proportion of time in sight during a trial that an individual bit the lid (s)
+PropIS_Lid.Nose = proportion of time in sight during a trial that an individual interacted with the lid with their nose (s)
+PropIS_Other = proportion of time in sight during a trial that an individual exhibited a behavior not defined by the ethogram (s)
+PropIS_Rear.look = proportion of time in sight during a trial that an individual bipedally stood and looked around (s)
+PropIS_Stand.look = proportion of time in sight during a trial that an indivdiual quadrapedally stood and looks around (s)
+PropIS_Off.plywood = proportion of time in sight during a trial that an individual stepped off the plywood (s)
+PropIS_Offside.Nose = proportion of time in sight during a trial that an individual interacted with a part of the box that was not the door or lid with their nose (s)
+PropIS_Door.Other = proportion of time in sight during a trial that an individual interacted with the door in a way that was not a nose, bite, or paw (s)
+PropIS_Walk = proportion of time in sight during a trial that an individual walked around on the plywood (s)
+PropIS_Stand.forage.near = proportion of time in sight during a trial that an individual stood around the box and ate food from the it (s)
+PropIS_Chew.plywood = proportion of time in sight during a trial that an individual chewed on the plywood (s)
+PropIS_Stand.forage.at = proportion of time in sight during a trial that an individual stood in the box and ate food from it (s)
+
+
