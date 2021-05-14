@@ -13,7 +13,7 @@ rm(list=ls())
 setwd('~/Desktop/Marmot_SEM_Innovation-master/')
 
 ####Required packages####
-library(XLConnectJars)
+library(XLConnectJars) #Due to the incompatability of XLConnect package with some computers, the output files "social_measures_agonistic.csv" and "social_measures_affiliative.csv" have been added to the data list. 
 library(XLConnect)
 library(igraph)
 
