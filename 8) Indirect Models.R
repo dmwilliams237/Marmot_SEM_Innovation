@@ -17,6 +17,7 @@ library(devtools) #Install from CRAN if you do not already have
 library(piecewiseSEM)
 library(lmerTest)
 library(nlme)
+library(multcompView) #In some cases, this package was required to view the output from piecewiseSEM
 
 ####The Data###
 #aff_behavstrat is the previously combined dataset with behavioral diversity, relative rank and affiliative social principal components
