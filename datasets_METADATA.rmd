@@ -1,5 +1,5 @@
 # Marmot_SEM_Innovation
-Code repository for Williams et al. () testing indirect social influence on innovation success mediated by behavioral strategy in yellow-bellied marmots
+Code repository for Williams et al. (2021) testing indirect social influence on innovation success mediated by behavioral strategy in yellow-bellied marmots
 Contact: dmwilliams@g.ucla.edu
 
 social_observations.csv
